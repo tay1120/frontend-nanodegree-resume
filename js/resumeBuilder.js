@@ -14,3 +14,25 @@ var bio = {
 	],
 	"bioPic":"images/fry.jpg"
 }
+
+var education = {
+	"schools": [
+ 		{
+ 			"name": "Mary Baldwin College",
+ 			"city": "Staunton, VA",
+ 			"degree": "N/A",
+ 			"majors": ["Computer Applications","Scriptwriting","Independent Studies"],
+ 			"dates": "2002-2003",
+ 			"url": "http://www.mbc.edu/"
+ 		},
+
+ 	],
+ 	"onlineCourses": [
+ 		{
+ 			"title": "Front-End Web Developer Nanodegree",
+ 			"School": "Udacity",
+ 			"dates": "2014-2015",
+ 			"url": "https://www.udacity.com/course/nd001"
+ 		}
+ 	]
+}
