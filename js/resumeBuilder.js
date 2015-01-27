@@ -36,3 +36,20 @@ var education = {
  		}
  	]
 }
+
+var work = {
+	"jobs": [
+		{
+			"employer": "Capital One",
+			"title": "Senior Operations Coordinator",
+			"dates": "August 2011-Present",
+			"description": "Fraud Claims Intake, Dispute Claims Intake, Secured Messaging Bank Claims, Payment Investigations, Payment Research, Payment Refunds, Credit Bureau Disputes, Account Research, Adjustments on Credit Card Accounts, Credit Bureau Disputes, Writting and Sending Customer Letters, Training"
+		},
+		{
+			"employer": "Convergys",
+			"title": "Customer Service and Resolutions Representative",
+			"dates": "October 2010-August 2011",
+			"description": "Customer Service, Manage incoming and outgoing calls, Resolve technical issues with mobile phones, Manage Customer Accounts, Add/Change account features, Equipment and Service Sales"
+		}
+	]
+}
