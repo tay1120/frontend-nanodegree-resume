@@ -42,12 +42,14 @@ var work = {
 		{
 			"employer": "Capital One",
 			"title": "Senior Operations Coordinator",
+			"location": "Glen Allen, VA",
 			"dates": "August 2011-Present",
 			"description": "Fraud Claims Intake, Dispute Claims Intake, Secured Messaging Bank Claims, Payment Investigations, Payment Research, Payment Refunds, Credit Bureau Disputes, Account Research, Adjustments on Credit Card Accounts, Credit Bureau Disputes, Writting and Sending Customer Letters, Training",
 		},
 		{
 			"employer": "Convergys",
 			"title": "Customer Service and Resolutions Representative",
+			"location": "Lake Mary, FL",
 			"dates": "October 2010-August 2011",
 			"description": "Customer Service, Manage incoming and outgoing calls, Resolve technical issues with mobile phones, Manage Customer Accounts, Add/Change account features, Equipment and Service Sales",
 		}
@@ -132,3 +134,12 @@ projects.display = function(){
 	}
 }
 projects.display();
+function locationizer(work_obj) {
+	var locationArray = [];
+	for (job in work_obj.jobs) {
+		var newLocation = work_obj.jobs[job].location;
+		locationArray.push(newLocation);
+	}
+	return locationArray;
+}
+console.log(locationizer(work));
