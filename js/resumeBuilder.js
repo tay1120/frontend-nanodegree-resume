@@ -54,14 +54,14 @@ var work = {
 	]
 }
 
-var project = {
+var projects = {
 	"projects": [
 		{
 			"title": "P1 Mockup To Website",
 			"dates": "2014",
 			"description": "You will be provided with a design mockup as a PDF-file and must replicate that design in HTML and CSS. You will develop a responsive website that will display images, descriptions and links to each of the portfolio projects you will complete throughout the course of the Front-End Web Developer Nanodegree.",
 			"images": [
-			"images/TestMockup.png","images/P1Mockup.png"
+			"images/TestMockup2.png","images/P1Mockup2.png"
 			]
 		}
 	]
@@ -112,9 +112,11 @@ function displayWork(){
 	}
 }
 displayWork();
-projects.display = function() {
+projects.display = function(){
 	for (project in projects.projects) {
+		// create new div for projects
 		$("#projects").append(HTMLprojectStart);
+		// project details
 		var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
 		var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
