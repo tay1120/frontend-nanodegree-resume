@@ -12,7 +12,7 @@ var bio = {
 	"skills" : [
 	"HTML", "JavaScript","CSS","GitBash and GitHub"
 	],
-	"bioPic":"images/fry.jpg"
+	"bioPic":"images/Tay.jpg"
 };
 
 var education = {
@@ -112,3 +112,26 @@ function displayWork(){
 	}
 }
 displayWork();
+projects.display = function() {
+	for (project in projects.projects) {
+		$("#projects").append(HTMLprojectStart);
+		var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
+		$(".project-entry:last").append(formattedTitle);
+		var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
+		$(".project-entry:last").append(formattedDates);
+		var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
+		$(".project-entry:last").append(formattedDescription);
+		if (projects.projects[project].images.length > 0) {
+			for (image in projects.projects[project].images) {
+				var formattedImage = HTMLprojectImage.replace("%data%",projects.projects[project].images[image]);
+				$(".project-entry:last").append(formattedImage);
+			}
+		}
+	}
+}
+projects.display();
+$(document).click(function (loc) {
+	var x = loc.pageX;
+	var y = loc.pageY;
+	logClicks(x,y);
+});
