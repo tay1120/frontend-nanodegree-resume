@@ -61,7 +61,7 @@ var education = {
  			"name": "Mary Baldwin College",
  			"location": "Staunton, VA",
  			"degree": "No Degree Obtained",
- 			"majors": ["Computer Applications","Scriptwriting","Independent Studies"],
+ 			"majors": ["Computer Applications"," Scriptwriting"," Independent Studies"],
  			"dates": "2002-2003",
  			"url": "http://www.mbc.edu/"
  		},
@@ -73,6 +73,24 @@ var education = {
  			"school": "Udacity",
  			"dates": "2014-2015",
  			"url": "https://www.udacity.com/course/nd001"
+ 		},
+ 		{
+ 			"title": "Intro to HTML and CSS",
+ 			"school": "Udacity",
+ 			"dates": "2014",
+ 			"url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
+ 		},
+ 		{
+ 			"title": "How to Use Git and GitHub",
+ 			"school": "Udacity",
+ 			"dates": "2014-2015",
+ 			"url": "https://www.udacity.com/course/viewer#!/c-ud775-nd"
+ 		},
+ 		{
+ 			"title": "JavaScript Basics",
+ 			"school": "Udacity",
+ 			"dates": "2015",
+ 			"url": "https://www.udacity.com/course/viewer#!/c-ud804-nd"
  		}
  	]
 }
@@ -92,9 +110,9 @@ education.display = function(){
 		var formattedMajor = HTMLschoolMajor.replace("%data%",education.schools[school].majors);
 		$(".education-entry:last").append(formattedMajor);
 	}
+	// begin online course section
+	$(".education-entry:last").append(HTMLonlineClasses);
 	for (course in education.onlineCourses) {
-		// begin online course section
-		$(".education-entry:last").append(HTMLonlineClasses);
 		// online class details
 		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
 		$(".education-entry:last").append(formattedOnlineTitle);
