@@ -19,7 +19,7 @@ var education = {
 	"schools": [
  		{
  			"name": "Mary Baldwin College",
- 			"city": "Staunton, VA",
+ 			"location": "Staunton, VA",
  			"degree": "No Degree Obtained",
  			"majors": ["Computer Applications","Scriptwriting","Independent Studies"],
  			"dates": "2002-2003",
@@ -108,6 +108,8 @@ function displayWork(){
 
 		var formattedDates = HTMLworkDates.replace("%data%",work.jobs[job].dates);
 		$(".work-entry:last").append(formattedDates);
+		var formattedWorkLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
+		$(".work-entry:last").append(formattedWorkLocation);
 
 		var formattedDescription = HTMLworkDescription.replace("%data%",work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
@@ -162,7 +164,7 @@ education.display = function(){
 		$(".education-entry:last").append(formattedDegree);
 		var formattedSchoolDates = HTMLschoolDates.replace("%data%",education.schools[school].dates);
 		$(".education-entry:last").append(formattedSchoolDates);
-		var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[school].city);
+		var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[school].location);
 		$(".education-entry:last").append(formattedSchoolLocation);
 		var formattedMajor = HTMLschoolMajor.replace("%data%",education.schools[school].majors);
 		$(".education-entry:last").append(formattedMajor);
@@ -182,3 +184,5 @@ education.display = function(){
 	}
 }
 education.display();
+// create a map
+$("#mapDiv").append(googleMap);
