@@ -20,7 +20,7 @@ var education = {
  		{
  			"name": "Mary Baldwin College",
  			"city": "Staunton, VA",
- 			"degree": "N/A",
+ 			"degree": "No Degree Obtained",
  			"majors": ["Computer Applications","Scriptwriting","Independent Studies"],
  			"dates": "2002-2003",
  			"url": "http://www.mbc.edu/"
@@ -151,3 +151,21 @@ function inName(name) {
 	return name[0] + " "+name[1];
 }
 $('#main').append(internationalizeButton);
+education.display = function(){
+	for (school in education.schools) {
+		// create new div for education
+		$("#education").append(HTMLschoolStart);
+		// school details
+		var formattedSchoolName = HTMLschoolName.replace("%data%",education.schools[school].name);
+		$(".education-entry:last").append(formattedSchoolName);
+		var formattedDegree = HTMLschoolDegree.replace("%data%",education.schools[school].degree);
+		$(".education-entry:last").append(formattedDegree);
+		var formattedSchoolDates = HTMLschoolDates.replace("%data%",education.schools[school].dates);
+		$(".education-entry:last").append(formattedSchoolDates);
+		var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[school].city);
+		$(".education-entry:last").append(formattedSchoolLocation);
+		var formattedMajor = HTMLschoolMajor.replace("%data%",education.schools[school].majors);
+		$(".education-entry:last").append(formattedMajor);
+	}
+}
+education.display();
