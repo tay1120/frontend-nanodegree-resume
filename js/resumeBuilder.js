@@ -6,11 +6,10 @@ var bio = {
 		"email": "Tay1120@gmail.com",
 		"github" : "Tay1120",
 		"twitter" : "@Tavia1120",
-		"location" : "Richmond, VA"
+		"location" : "Henrico, VA"
 	},
 	"welcomeMessage" : "I am an entry level Web Developer currently in training.",
-	"skills" : [
-	"HTML", "JavaScript","CSS (Cascading Style Sheets)","GitBash & GitHub","JQuery","JSON (JavaScript Object Notation)","String, Array & Loop Manipulation","Syntax","Developer Tools"
+	"skills" : ["HTML", "JavaScript","CSS (Cascading Style Sheets)","GitBash & GitHub","JQuery","JSON (JavaScript Object Notation)","String, Array & Loop Manipulation","Syntax","Developer Tools"
 	],
 	"bioPic":"images/Tay.jpg"
 }
@@ -65,7 +64,14 @@ var education = {
  			"dates": "2002-2003",
  			"url": "http://www.mbc.edu/"
  		},
-
+ 		{
+ 			"name": "Richmond Bartending Academy",
+ 			"location": "Richmond, VA",
+ 			"degree": "Bartending Certification",
+ 			"majors": ["Bartending"," Mixology"],
+ 			"dates": "2013",
+ 			"url": "http://richmondbartending.com/"
+ 		},
  	],
  	"onlineCourses": [
  		{
