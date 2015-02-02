@@ -10,7 +10,7 @@ var bio = {
 	},
 	"welcomeMessage" : "I am an entry level Web Developer currently in training.",
 	"skills" : [
-	"HTML", "JavaScript","CSS","GitBash and GitHub"
+	"HTML", "JavaScript","CSS (Cascading Style Sheets)","GitBash & GitHub","JQuery","JSON (JavaScript Object Notation)","String, Array & Loop Manipulation","Syntax","Developer Tools"
 	],
 	"bioPic":"images/Tay.jpg"
 }
