@@ -1,0 +1,16 @@
+Websites Used For Research:
+
+http://www.wisegeek.com/what-is-an-application-program-interface.htm
+https://developers.google.com/maps/?csw=1
+https://developers.google.com/maps/documentation/imageapis/
+http://en.wikipedia.org/wiki/Application_programming_interface
+
+
+Github Repository website:
+
+https://github.com/tay1120/reflections.git
+
+
+Github Project 2 Resume website:
+
+https://github.com/tay1120/frontend-nanodegree-resume.git
